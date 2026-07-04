@@ -1,8 +1,30 @@
 .Hero {
+  position: relative;
   display: flex;
   width: 100%;
   min-height: 100vh;
   font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;              
+  height: 1px;             
+  background-color: #b3b3b3;
+}
+.Hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 1px;
+  background-color: #b3b3b3;
 }
 
 /* Left panel: content */
@@ -25,7 +47,10 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #C05621;
+  background: linear-gradient(135deg, #D9793F 0%, #C05621 40%, #7A3313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   white-space: nowrap;
 }
 
@@ -48,7 +73,7 @@
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, #C05621, #cc764b);
+  background: linear-gradient(135deg, #E08A52 0%, #C05621 50%, #9A431A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,18 +126,64 @@
   border-color: #A8A296;
 }
 
+
+
+/*Hero impact stats*/
+.hero-impact {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;   
+  padding-top: 24px;
+}
+
+.hero-impact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 1px;
+  background-color: #D8D3C8;
+}
+
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.impact-number {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  color: #7D8459;
+}
+
+.impact-label {
+  font-size: 13px;
+  color: #6B6B63;
+  white-space: nowrap;
+}
+
+
+
 /* Right panel: image */
 .hero-image {
-  flex: 1 1 50%;
+  flex: 0 0 auto;
+  width: 40%;          
+  max-width: 600px;
   min-width: 0;
   position: relative;
   overflow: hidden;
-  margin-top: 4%;
+  margin-left: auto;   
 }
 
 .hero-image img {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -121,7 +192,7 @@
   position: absolute;
   top: 32px;
   right: 32px;
-  background-color: #C05621;
+  background: radial-gradient(circle at 30% 30%, #E08A52 0%, #C05621 60%, #8A3D18 100%);
   color: #FFFFFF;
   font-size: 13px;
   font-weight: 600;
@@ -145,4 +216,9 @@
   .hero-content {
     padding: 48px 32px;
   }
+  .hero-impact {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
 }

@@ -18,13 +18,25 @@ const Hero = () => {
     </div>
 
     <div className="hero-impact">
-    
+    <div className="impact-stat">
+    <span className="impact-number">200</span>
+    <span className="impact-label">Lives reached</span>
+    </div>
+    <div className="impact-stat">
+    <span className="impact-number">3</span>
+    <span className="impact-label">Communities served</span>
+    </div>
+    <div className="impact-stat">
+    <span className="impact-number">2</span>
+    <span className="impact-label">Years on the ground</span>
+    </div>
     </div>
 
     </div>
 
     <div className="hero-image">
     <img src={heroImg} alt="Hero" />
+    <span className="hero-tag">2026 Report Out</span>
     </div>
       
     </div>
