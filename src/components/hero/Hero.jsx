@@ -8,8 +8,9 @@ const Hero = () => {
     
     <div className="hero-content">
     <span className="hero-badge">EST.2026 - National Outreach</span>
-    <h1 className="hero-title">Welcome to Our Platform</h1>
-    <p className="hero-subtitle">Discover the power of national outreach and make a difference in your community.</p>
+    <h1 className="hero-title"><span className="highlight">Deon Ellison</span> Foundation</h1>
+    <p className="hero-subtitle">We work alongside families and neighborhoods to build lasting food security, 
+        economic resilience, and belonging — one community at a time.</p>
     
     <div className="hero-buttons">
     <button className="hero-button primary">See Our Impact</button>
