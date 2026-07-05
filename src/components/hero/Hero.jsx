@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='Hero'>
     
     <div className="hero-content">
-    <span className="hero-badge">EST.2026 - Local Outreach</span>
+    <span className="hero-badge">EST.2026 - Douglas Outreach</span>
     <h1 className="hero-title"><span className="highlight">Deon Ellison</span> Foundation</h1>
     <p className="hero-subtitle">We work alongside families and neighborhoods to build lasting food security, 
         economic resilience, and belonging — one community at a time.</p>
