@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import './Home.css'
 import preview1 from '../../assets/previewImg1.jpg'
 import preview2 from '../../assets/previewImg2.jpg'
@@ -7,6 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 
 const Home = () => {
+  const [activeTab, setActiveTab] = useState('relief');
   return (
     <div className='Home'>
     <div className="home-content">
@@ -49,6 +50,41 @@ const Home = () => {
 
       </div>
     </div>
+    
+    <div className="home-programmes">
+    <span className="home-badge">our programmes</span>
+
+    <h2 className="home-programmes-title">How We Serve Our Communities in Douglas</h2>
+    
+    <p className="home-programmes-subtitle">As a trusted NPO, we provide essential food relief, clothing donations, 
+      and community outreach programs to support vulnerable families and restore dignity.</p>
+
+    <div className="home-programmes-tabs">
+    <ul>
+    <li
+      className={activeTab === 'relief' ? 'active' : ''}
+      onClick={() => setActiveTab('relief')}
+    >
+      <span className="tab-number">01</span>
+      <span className="tab-title">The Immediate Relief Program</span>
+    </li>
+    <li
+      className={activeTab === 'dignity' ? 'active' : ''}
+      onClick={() => setActiveTab('dignity')}
+    >
+      <span className="tab-number">02</span>
+      <span className="tab-title">The Dignity Program</span>
+    </li>
+    <li
+      className={activeTab === 'outreach' ? 'active' : ''}
+      onClick={() => setActiveTab('outreach')}
+    >
+      <span className="tab-number">03</span>
+      <span className="tab-title">The Community Outreach Program</span>
+    </li>
+  </ul>
+  </div>
+  </div>
 
 
 

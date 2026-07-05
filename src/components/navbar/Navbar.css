@@ -51,5 +51,4 @@ nav ul li:hover::after {
 .blur-nav{
     backdrop-filter: blur(10px);
     transition: ease-in-out 0.5s;
-    background-color: rgba(75, 75, 75, 0.137);
 }
