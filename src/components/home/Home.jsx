@@ -4,6 +4,7 @@ import preview1 from '../../assets/previewImg1.jpg'
 import preview2 from '../../assets/previewImg2.jpg'
 import preview3 from '../../assets/previewImg3.jpg'
 import { FaArrowRight } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 import foodSystemsImg from '../../assets/foodSystemsImg.jpg'
 import economicImg from '../../assets/economicImg.png'
 import infrastructureImg from '../../assets/infrastructureImg.png'
@@ -15,39 +16,39 @@ const Home = () => {
 
   const programmeData = {
   relief: {
-    badge: 'Food Systems',
+    badge: 'Food & Staples',
     eyebrow: 'Program 01',
     title: 'The Immediate Relief Program',
     description:
-      'We establish community-led seed banks, cooperative farms, and local distribution networks that reduce dependence on fragile supply chains and restore indigenous growing traditions.',
+      'We establish community-led weekly food drives, hot meal distributions, emergency grocery parcels, and humanitarian food hampers.',
     image: foodSystemsImg,
     stats: [
-      { number: '61K people', label: 'Directly reached' },
-      { number: '22 countries', label: 'Active programs' },
+      { number: '1K people', label: 'Directly reached' },
+      { number: '10 communities', label: 'Active programs' },
     ],
   },
   dignity: {
-    badge: 'Economic Growth',
+    badge: 'Clothing & Essentials',
     eyebrow: 'Program 02',
     title: 'The Dignity Program',
     description:
-      'We provide microloans, vocational training, and market access so families can build sustainable income streams independent of external aid.',
+      'We provide seasonal clothing winter blanket distributions, school shoe/uniform collections, and work-wear packages for job seekers.',
     image: economicImg,
     stats: [
-      { number: '34K people', label: 'Directly reached' },
-      { number: '15 countries', label: 'Active programs' },
+      { number: '1K people', label: 'Directly reached' },
+      { number: '10 communities', label: 'Active programs' },
     ],
   },
   outreach: {
-    badge: 'Infrastructure',
+    badge: 'Events & Safe Spaces',
     eyebrow: 'Program 03',
     title: 'The Community Outreach Program',
     description:
-      'We build wells, clinics, and schools alongside local leaders, ensuring every project is maintained and owned by the community it serves.',
+      'Youth programs, community support circles, counseling sessions, and neighborhood clean-up or festival days.',
     image: infrastructureImg,
     stats: [
       { number: '48 projects', label: 'Completed' },
-      { number: '9 countries', label: 'Active programs' },
+      { number: '10 communities', label: 'Active programs' },
     ],
   },
 }
@@ -141,7 +142,7 @@ const active = programmeData[activeTab]
           </div>
 
           <a href="#" className="programme-link">
-            Read full program overview <span className="arrow">→</span>
+            Read full program overview <span className="arrow"><IoIosArrowForward /></span>
           </a>
         </div>
   </div>

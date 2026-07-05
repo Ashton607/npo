@@ -30,7 +30,7 @@
   background-color: #C05621;
 }
 
-/*Our work preview*/
+/*Our work preview images*/
 .home-about-title{
   font-size: 3rem;
   font-weight: 500;
@@ -47,7 +47,8 @@
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.5;
+  color: #6B6B63;
 }
 
 .home-about-preview {
@@ -148,8 +149,9 @@
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8;
-  width: 87.8%;
+  line-height: 1.5;
+  color: #6B6B63;
+  width: 86%;
 }
 
 .home-programmes-tabs ul {
@@ -165,7 +167,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 1px 45px;
+  padding: 1px 60px;
   background-color: #EFEAE0;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -192,7 +194,7 @@
 
 /* Active tab */
 .home-programmes-tabs li.active {
-  background-color: #14251E;
+  background-color: #1f332b;
 }
 
 .home-programmes-tabs li.active .tab-number {
@@ -213,7 +215,7 @@
 /*Home programmes content*/
 .home-programmes-content {
   display: flex;
-  width: 100%;
+  width: 88%;
   max-height: 500px;
   background-color: #EFEAE0;
   margin-top: 20px;
@@ -237,7 +239,7 @@
   position: absolute;
   top: 24px;
   left: 24px;
-  background-color: #C05621;
+  background: radial-gradient(circle at 30% 30%, #E08A52 0%, #C05621 60%, #8A3D18 100%);
   color: #FFFFFF;
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
@@ -274,12 +276,15 @@
   font-weight: 600;
   font-size: clamp(32px, 3vw, 42px);
   line-height: 1.15;
-  color: #1F1F1D;
+  background: linear-gradient(135deg, #E08A52 0%, #C05621 50%, #9A431A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
 }
 
 .programme-description {
-  font-family: 'Outfit', sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #6B6B63;
@@ -306,11 +311,10 @@
 }
 
 .stat-number {
-  font-family: 'Fraunces', serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-size: 26px;
-  color: #1F1F1D;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #305043;
 }
 
 .stat-label {
@@ -338,6 +342,7 @@
 
 .programme-link .arrow {
   transition: transform 0.2s ease;
+  margin-bottom: -5px;
 }
 
 .programme-link:hover {
