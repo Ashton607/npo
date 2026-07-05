@@ -206,16 +206,143 @@
   color: #FFFFFF;
 }
 
-/* Hover on inactive tabs */
 .home-programmes-tabs li:not(.active):hover {
   background-color: #E5DFD1;
 }
 
+/*Home programmes content*/
+.home-programmes-content {
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  background-color: #EFEAE0;
+  margin-top: 20px;
+}
 
-@media (max-width: 768px) {
-  .home-programmes-tabs ul {
-    flex-direction: column;
-  }
+/* Left: image */
+.programme-image {
+  position: relative;
+  flex: 1 1 45%;
+  overflow: hidden;
+}
+
+.programme-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.programme-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: #C05621;
+  color: #FFFFFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Right: details */
+.programme-details {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 64px 72px;
+  box-sizing: border-box;
+}
+
+.programme-eyebrow {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C05621;
+}
+
+.programme-title {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: clamp(32px, 3vw, 42px);
+  line-height: 1.15;
+  color: #1F1F1D;
+  margin: 0;
+}
+
+.programme-description {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6B6B63;
+  max-width: 420px;
+  margin: 0;
+}
+
+.programme-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #D8D3C8;
+  margin: 4px 0;
+}
+
+.programme-stats {
+  display: flex;
+  gap: 48px;
+}
+
+.programme-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-number {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 26px;
+  color: #1F1F1D;
+}
+
+.stat-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6B6B63;
+}
+
+.programme-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F1F1D;
+  text-decoration: none;
+  margin-top: 8px;
+  width: fit-content;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.programme-link .arrow {
+  transition: transform 0.2s ease;
+}
+
+.programme-link:hover {
+  color: #C05621;
+  gap: 12px;
 }
 
 

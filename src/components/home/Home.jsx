@@ -4,10 +4,54 @@ import preview1 from '../../assets/previewImg1.jpg'
 import preview2 from '../../assets/previewImg2.jpg'
 import preview3 from '../../assets/previewImg3.jpg'
 import { FaArrowRight } from "react-icons/fa6";
+import foodSystemsImg from '../../assets/foodSystemsImg.jpg'
+import economicImg from '../../assets/economicImg.png'
+import infrastructureImg from '../../assets/infrastructureImg.png'
 
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('relief');
+  
+
+  const programmeData = {
+  relief: {
+    badge: 'Food Systems',
+    eyebrow: 'Program 01',
+    title: 'The Immediate Relief Program',
+    description:
+      'We establish community-led seed banks, cooperative farms, and local distribution networks that reduce dependence on fragile supply chains and restore indigenous growing traditions.',
+    image: foodSystemsImg,
+    stats: [
+      { number: '61K people', label: 'Directly reached' },
+      { number: '22 countries', label: 'Active programs' },
+    ],
+  },
+  dignity: {
+    badge: 'Economic Growth',
+    eyebrow: 'Program 02',
+    title: 'The Dignity Program',
+    description:
+      'We provide microloans, vocational training, and market access so families can build sustainable income streams independent of external aid.',
+    image: economicImg,
+    stats: [
+      { number: '34K people', label: 'Directly reached' },
+      { number: '15 countries', label: 'Active programs' },
+    ],
+  },
+  outreach: {
+    badge: 'Infrastructure',
+    eyebrow: 'Program 03',
+    title: 'The Community Outreach Program',
+    description:
+      'We build wells, clinics, and schools alongside local leaders, ensuring every project is maintained and owned by the community it serves.',
+    image: infrastructureImg,
+    stats: [
+      { number: '48 projects', label: 'Completed' },
+      { number: '9 countries', label: 'Active programs' },
+    ],
+  },
+}
+const active = programmeData[activeTab]
   return (
     <div className='Home'>
     <div className="home-content">
@@ -59,30 +103,47 @@ const Home = () => {
     <p className="home-programmes-subtitle">As a trusted NPO, we provide essential food relief, clothing donations, 
       and community outreach programs to support vulnerable families and restore dignity.</p>
 
-    <div className="home-programmes-tabs">
-    <ul>
-    <li
-      className={activeTab === 'relief' ? 'active' : ''}
-      onClick={() => setActiveTab('relief')}
-    >
-      <span className="tab-number">01</span>
-      <span className="tab-title">The Immediate Relief Program</span>
-    </li>
-    <li
-      className={activeTab === 'dignity' ? 'active' : ''}
-      onClick={() => setActiveTab('dignity')}
-    >
-      <span className="tab-number">02</span>
-      <span className="tab-title">The Dignity Program</span>
-    </li>
-    <li
-      className={activeTab === 'outreach' ? 'active' : ''}
-      onClick={() => setActiveTab('outreach')}
-    >
-      <span className="tab-number">03</span>
-      <span className="tab-title">The Community Outreach Program</span>
-    </li>
+  <div className="home-programmes-tabs">
+  <ul>
+  {Object.entries(programmeData).map(([key, data], index) => (
+            <li
+              key={key}
+              className={activeTab === key ? 'active' : ''}
+              onClick={() => setActiveTab(key)}
+            >
+              <span className="tab-number">0{index + 1}</span>
+              <span className="tab-title">{data.title}</span>
+            </li>
+          ))}
   </ul>
+  </div>
+
+  <div className="home-programmes-content">
+     <div className="programme-image">
+          <img src={active.image} alt={active.title} />
+          <span className="programme-badge">{active.badge}</span>
+        </div>
+
+        <div className="programme-details">
+          <span className="programme-eyebrow">{active.eyebrow}</span>
+          <h2 className="programme-title">{active.title}</h2>
+          <p className="programme-description">{active.description}</p>
+
+          <div className="programme-divider"></div>
+
+          <div className="programme-stats">
+            {active.stats.map((stat, i) => (
+              <div className="programme-stat" key={i}>
+                <span className="stat-number">{stat.number}</span>
+                <span className="stat-label">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <a href="#" className="programme-link">
+            Read full program overview <span className="arrow">→</span>
+          </a>
+        </div>
   </div>
   </div>
 
