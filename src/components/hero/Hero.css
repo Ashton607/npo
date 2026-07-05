@@ -6,6 +6,7 @@
   font-family: 'Outfit', sans-serif;
   box-sizing: border-box;
   overflow: hidden;
+  top:50px;
 }
 
 .Hero::before {
@@ -33,7 +34,7 @@
   min-width: 0;              
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 24px;
   padding: 64px 72px;
   background-color: #F4F1EA;
