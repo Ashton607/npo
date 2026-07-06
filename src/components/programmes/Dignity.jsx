@@ -20,20 +20,21 @@ const Dignity = () => {
         {/*Overview*/}
         <span className="programmes-badge">overview</span>
         <h2 className="programmes-title-h2">
-              <span className="line1">The Immediate Dignity Programme.</span>
-              <span className="line2">Combating Hunger in Douglas.</span>
+              <span className="line1">The Dignity Programme.</span>
+              <span className="line2">Restoring Pride & Protection in Douglas.</span>
         </h2>
-        <p className="programmes-subtitle">Our Immediate Relief Programme focuses on stabilizing vulnerable 
-        households in Douglas, Breipaal and Bongani by providing rapid, reliable food security. Under trusted local leadership, 
-        we pack and distribute nutritionally balanced food hampers for those facing extreme hardship. 
-        By focusing resources directly on child headed homes, child care centers, and
-        elderly residents, this programme delivers immediate physical relief, curbs nutritional insecurity, and 
-        restores foundational strength to our community.</p>
+        <p className="programmes-subtitle">Our Dignity Programme is dedicated to restoring self worth and 
+        providing physical protection to individuals facing severe economic hardship. 
+        By organizing targeted clothing drives, distributing warm winter blankets, and 
+        supplying essential school uniforms and shoes to local children, we address the 
+        practical barriers caused by poverty. This programme ensures that vulnerable community 
+        members in Douglas, Breipaal & Bongani can face the seasons safely and that children can 
+        attend school with confidence, pride, and the personal dignity they deserve.</p>
     
         {/*Methods*/}
         <span className="programmes-badge">our method</span>
         <h2 className="programmes-title-h2">
-              <span className="line1">The Immediate Relief Programme.</span>
+              <span className="line1">The Dignity Programme.</span>
               <span className="line2">How it comes to life.</span>
         </h2>
     
