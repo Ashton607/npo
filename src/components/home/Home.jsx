@@ -8,6 +8,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import foodSystemsImg from '../../assets/foodSystemsImg.jpg'
 import economicImg from '../../assets/economicImg.png'
 import infrastructureImg from '../../assets/infrastructureImg.png'
+import Hero from '../hero/Hero'
 
 
 const Home = () => {
@@ -23,8 +24,8 @@ const Home = () => {
       'We establish community-led weekly food drives, hot meal distributions, emergency grocery parcels, and humanitarian food hampers.',
     image: foodSystemsImg,
     stats: [
-      { number: '1K people', label: 'Directly reached' },
-      { number: '10 communities', label: 'Active programs' },
+      { number: '200 people', label: 'Directly reached' },
+      { number: '3 communities', label: 'Active programs' },
     ],
   },
   dignity: {
@@ -35,8 +36,8 @@ const Home = () => {
       'We provide seasonal clothing winter blanket distributions, school shoe/uniform collections, and work-wear packages for job seekers.',
     image: economicImg,
     stats: [
-      { number: '1K people', label: 'Directly reached' },
-      { number: '10 communities', label: 'Active programs' },
+      { number: '200 people', label: 'Directly reached' },
+      { number: '3 communities', label: 'Active programs' },
     ],
   },
   outreach: {
@@ -47,14 +48,15 @@ const Home = () => {
       'Youth programs, community support circles, counseling sessions, and neighborhood clean-up or festival days.',
     image: infrastructureImg,
     stats: [
-      { number: '48 projects', label: 'Completed' },
-      { number: '10 communities', label: 'Active programs' },
+      { number: '10 projects', label: 'Completed' },
+      { number: '3 communities', label: 'Active programs' },
     ],
   },
 }
 const active = programmeData[activeTab]
   return (
     <div className='Home'>
+    <Hero/>
     <div className="home-content">
 
     <span className="home-badge">what we do for you</span>

@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [sticky,setSticky] = useState(false)
@@ -23,11 +24,11 @@ const Navbar = () => {
   return (
     <nav className={sticky ? 'blur-nav' : ''}>
     <ul>
-        <li>Home</li>
-        <li>our work</li>
-        <li>programmes</li>
-        <li>contact</li>
-        <li>donate</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/ourwork">our work</Link></li>
+        <li><Link to="/programmes">programmes</Link></li>
+        <li><Link to="/contact">contact</Link></li>
+        <li><Link to="/donate">donate</Link></li>
     </ul>
     </nav>
   )
