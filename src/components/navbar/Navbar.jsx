@@ -27,18 +27,18 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/ourwork">our work</Link></li>
         <li className="nav-item has-dropdown">
-        <Link to="/programmes">
+        <span className="nav-link">
         Programmes <span className="dropdown-arrow">▾</span>
-        </Link>
+        </span>
         <ul className="dropdown-menu">
         <li>
-        <Link to="/programmes/relief">Immediate Relief Program</Link>
+        <Link to="/relief">Immediate Relief Program</Link>
         </li>
         <li>
-        <Link to="/programmes/dignity">Dignity Program</Link>
+        <Link to="/dignity">Dignity Program</Link>
         </li>
         <li>
-        <Link to="/programmes/outreach">Community Outreach Program</Link>
+        <Link to="/outreach">Community Outreach Program</Link>
         </li>
         </ul>
         </li>
