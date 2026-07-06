@@ -4,7 +4,7 @@
   flex-direction: column;
   margin-top: 4%;
   width: 100%;
-  background: beige;
+  background-color: #F4F1EA;
 }
 
 .our-work-content{
@@ -59,3 +59,159 @@
   color: #616161;
   width: 60%;
 }
+
+/*Impact section*/
+.our-work-impact {
+  display: flex;
+  width: 100%;
+  background-color: #14251E;
+  padding: 48px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.impact-item {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.impact-item:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.impact-number {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1;
+  background: linear-gradient(135deg, #a74000 0%, #C05621 40%, #7A3313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.impact-label {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.impact-caption {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  color: #A8B0A5;
+}
+
+/*Our work cards*/
+.our-work-cards {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.card1,
+.card2,
+.card3 {
+  flex: 1 1 33.333%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image section */
+.card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  border-radius: 4px;
+}
+
+.card1:hover .card-img img,
+.card2:hover .card-img img,
+.card3:hover .card-img img {
+  transform: scale(1.05);
+}
+
+.card-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: radial-gradient(circle at 30% 30%, #E08A52 0%, #C05621 60%, #8A3D18 100%);
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.card-label h3 {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* Info section */
+.card-info {
+  padding: 28px 24px;
+  flex: 1;
+}
+
+.card-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card-info li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #E9E9E5;
+}
+
+.card-info li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.card-info-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #a74000 0%, #C05621 40%, #7A3313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-info-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #616161;
+}
+
