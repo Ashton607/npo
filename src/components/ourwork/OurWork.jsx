@@ -3,6 +3,7 @@ import './OurWork.css'
 import card1 from '../../assets/card1.svg'
 import card2 from '../../assets/card2.jpg'
 import card3 from '../../assets/card3.svg'
+import { IoIosArrowForward } from "react-icons/io";
 
 
 const OurWork = () => {
@@ -132,6 +133,36 @@ const OurWork = () => {
         </li>
       </ul>
     </div>
+    </div>
+    </div>
+
+    <span className="our-work-badge">choose deon ellison foundation</span>
+    <h2 className="our-work-title">
+          <span className="line1">Three programs..</span>
+          <span className="line2">Your partnership.</span>
+    </h2>
+    <p className="our-work-subtitle">Partner with a registered non-profit organization built on deep roots,
+     trusted local leadership, and complete financial accountability. 
+     Under the guidance of a dedicated community pastor, we turn your personal generosity or 
+     corporate social investment (CSI) into high-impact social relief. Whether you are an individual 
+     looking to make a life-changing donation or a business seeking a compliant partner for socio-economic
+     development, your support directly funds our verified food security, clothing drives, and community 
+     development initiatives driving measurable, transparent transformation where it is needed most.</p>
+
+    <div className="our-work-cta">
+    <div className="cta-text">
+    <h2 className="cta-title">Join the work.</h2>
+    <p className="cta-subtitle">
+      Whether you volunteer, partner, or donate — every form of commitment
+      moves us closer to a world where no community is left behind.
+    </p>
+    </div>
+   {/*Should add an on click function to the buttons later */}
+   <div className="cta-buttons">
+    <button className="cta-button primary">
+      Donate now <span className="arrow"><IoIosArrowForward style={{marginBottom:'-3px'}}/></span>
+    </button>
+    <button className="cta-button secondary">Volunteer with us</button>
     </div>
     </div>
 
