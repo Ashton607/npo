@@ -19,37 +19,37 @@ const Home = () => {
   relief: {
     badge: 'Food & Staples',
     eyebrow: 'Program 01',
-    title: 'The Immediate Relief Program',
+    title: 'The Immediate Relief Programme',
     description:
       'We establish community-led weekly food drives, hot meal distributions, emergency grocery parcels, and humanitarian food hampers.',
     image: foodSystemsImg,
     stats: [
       { number: '200 people', label: 'Directly reached' },
-      { number: '3 communities', label: 'Active programs' },
+      { number: '3 communities', label: 'Active programmes' },
     ],
   },
   dignity: {
     badge: 'Clothing & Essentials',
     eyebrow: 'Program 02',
-    title: 'The Dignity Program',
+    title: 'The Dignity Programme',
     description:
       'We provide seasonal clothing winter blanket distributions, school shoe/uniform collections, and work-wear packages for job seekers.',
     image: economicImg,
     stats: [
       { number: '200 people', label: 'Directly reached' },
-      { number: '3 communities', label: 'Active programs' },
+      { number: '3 communities', label: 'Active programmes' },
     ],
   },
   outreach: {
     badge: 'Events & Safe Spaces',
     eyebrow: 'Program 03',
-    title: 'The Community Outreach Program',
+    title: 'The Community Outreach Programme',
     description:
-      'Youth programs, community support circles, counseling sessions, and neighborhood clean-up or festival days.',
+      'Youth programmes, community support circles, counseling sessions, and neighborhood clean-up or festival days.',
     image: infrastructureImg,
     stats: [
       { number: '10 projects', label: 'Completed' },
-      { number: '3 communities', label: 'Active programs' },
+      { number: '3 communities', label: 'Active programmes' },
     ],
   },
 }
@@ -144,7 +144,7 @@ const active = programmeData[activeTab]
           </div>
 
           <a href="#" className="programme-link">
-            Read full program overview <span className="arrow"><IoIosArrowForward /></span>
+            Read full programme overview <span className="arrow"><IoIosArrowForward /></span>
           </a>
         </div>
   </div>

@@ -32,13 +32,13 @@ const Navbar = () => {
         </span>
         <ul className="dropdown-menu">
         <li>
-        <Link to="/relief">Immediate Relief Program</Link>
+        <Link to="/relief">Immediate Relief Programme</Link>
         </li>
         <li>
-        <Link to="/dignity">Dignity Program</Link>
+        <Link to="/dignity">Dignity Programme</Link>
         </li>
         <li>
-        <Link to="/outreach">Community Outreach Program</Link>
+        <Link to="/outreach">Community Outreach Programme</Link>
         </li>
         </ul>
         </li>

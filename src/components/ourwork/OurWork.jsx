@@ -45,7 +45,7 @@ const OurWork = () => {
    <div className="impact-item">
     <span className="impact-number">5,000</span>
     <span className="impact-label">First-year target</span>
-    <span className="impact-caption">hot meals for children in need</span>
+    <span className="impact-caption">food hampers for residents in need</span>
    </div>
    </div>
 
@@ -57,14 +57,14 @@ const OurWork = () => {
     <p className="our-work-subtitle">As a registered NPO, we provide transparent, 
       grass-roots social relief to support vulnerable families. 
       From immediate food security to clothing drives and local social support, 
-      our programs are structured to deliver measurable community impact and fulfill corporate CSI goals.</p>
+      our programmes are structured to deliver measurable community impact and fulfill corporate CSI goals.</p>
     
     <div className="our-work-cards">
     <div className="card1">
     <div className="card-img card1-img">
     <img src={card1} alt="" />
     <div className="card-label">
-    <h3>The Immediate Relief Program</h3>
+    <h3>The Immediate Relief Programme</h3>
     </div>
     </div>
     <div className="card-info">
@@ -72,7 +72,7 @@ const OurWork = () => {
         <li>
         <span className="card-info-title">Focus</span>
         <span className="card-info-subtitle">Alleviating hunger and household food insecurity by 
-        distributing emergency grocery parcels, hot meals, and nutritional hampers directly to 
+        distributing emergency grocery parcels and nutritional hampers directly to 
         child-headed homes, child care centers, and vulnerable elderly residents.</span>
         </li>
         <li>
@@ -89,7 +89,7 @@ const OurWork = () => {
     <div className="card-img card2-img">
     <img src={card2} alt="" />
     <div className="card-label">
-    <h3>The Dignity Program</h3>
+    <h3>The Dignity Programme</h3>
     </div>
     </div> 
     <div className="card-info">
@@ -114,7 +114,7 @@ const OurWork = () => {
     <div className="card-img card3-img">
     <img src={card3} alt="" />
     <div className="card-label">
-    <h3>The Community Outreach Program</h3>
+    <h3>The Community Outreach Programme</h3>
     </div>
     </div>
     <div className="card-info">
@@ -127,7 +127,7 @@ const OurWork = () => {
         </li>
         <li>
         <span className="card-info-title">Impact</span>
-        <span className="card-info-subtitle">Moves beyond physical aid to cultivate long-term emotional 
+        <span className="card-info-subtitle">Moves beyond physical aid to cultivate long term emotional 
         well-being, providing the social support and guidance needed to help individuals break cycles of 
         hardship.</span>
         </li>
@@ -138,7 +138,7 @@ const OurWork = () => {
 
     <span className="our-work-badge">choose deon ellison foundation</span>
     <h2 className="our-work-title">
-          <span className="line1">Three programs..</span>
+          <span className="line1">Three programmes.</span>
           <span className="line2">Your partnership.</span>
     </h2>
     <p className="our-work-subtitle">Partner with a registered non-profit organization built on deep roots,
