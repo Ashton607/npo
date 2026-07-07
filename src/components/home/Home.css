@@ -354,42 +354,218 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsive: stack on smaller screens */
-@media (max-width: 900px) {
-  .home-about-preview {
-    padding: 48px 32px;
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-content {
+    padding: 56px 48px;
   }
+
+  .home-about-title,
+  .home-programmes-title {
+    font-size: 2.5rem;
+  }
+
+  .programme-title {
+    font-size: clamp(28px, 3vw, 36px);
+  }
+
+  .home-programmes-tabs li {
+    padding: 1px 32px;
+  }
+}
+
+/* Small tablet / large mobile */
+@media (max-width: 900px) {
+  .home-content {
+    padding: 48px 32px;
+    margin-top: 30px;
+  }
+
+  .home-about-title,
+  .home-programmes-title {
+    font-size: 2rem;
+  }
+
+  .home-programmes-subtitle {
+    width: 100%;
+  }
+
+  /* Preview cards stack */
   .preview-card {
     flex-direction: column;
+    gap: 16px;
   }
+
   .preview-img1,
   .preview-img2,
   .preview-img3 {
     aspect-ratio: 16 / 10;
+  }
+
+  /* Tabs stack vertically */
+  .home-programmes-tabs ul {
+    flex-direction: column;
+  }
+
+  .home-programmes-tabs li {
+    padding: 16px 24px;
+  }
+
+  /* Programme content stacks */
+  .home-programmes-content {
+    flex-direction: column;
+    width: 100%;
+    max-height: none;
+  }
+
+  .programme-image {
+    min-height: 320px;
+  }
+
+  .programme-image img {
+    width: 100%;
+  }
+
+  .programme-details {
+    padding: 40px 32px;
+  }
+
+  .programme-stats {
+    gap: 32px;
+  }
+
+  .home-programmes {
+    margin-top: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-content {
+    padding: 36px 24px;
+  }
+
+  .home-badge {
+    font-size: 12px;
+  }
+
+  .home-about-title,
+  .home-programmes-title {
+    font-size: 1.65rem;
+  }
+
+  .home-about-subtitle,
+  .home-programmes-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .preview-title {
+    font-size: 18px;
+  }
+
+  .preview-subtitle {
+    font-size: 13px;
+  }
+
+  .tab-title {
+    font-size: 0.85rem;
+  }
+
+  .programme-details {
+    padding: 32px 24px;
+    gap: 16px;
+  }
+
+  .programme-description {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .programme-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .home-content {
+    padding: 28px 18px;
+    margin-top: 20px;
+  }
+
+  .home-about-title,
+  .home-programmes-title {
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .home-badge::before {
+    width: 20px;
+  }
+
+  .preview-img1,
+  .preview-img2,
+  .preview-img3 {
+    aspect-ratio: 4 / 3;
+  }
+
+  .preview-title {
+    font-size: 16px;
+  }
+
+  .preview-overlay {
+    padding: 1rem 0.8rem 0.8rem;
+  }
+
+  .home-programmes {
+    margin-top: 40px;
+  }
+
+  .home-programmes-tabs li {
+    padding: 14px 18px;
+  }
+
+  .tab-number {
+    font-size: 12px;
+  }
+
+  .tab-title {
+    font-size: 0.8rem;
+  }
+
+  .programme-image {
+    min-height: 220px;
+  }
+
+  .programme-badge {
+    top: 16px;
+    left: 16px;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .programme-title {
+    font-size: 24px;
+  }
+
+  .programme-stats {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 1.25rem;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .programme-link {
+    font-size: 14px;
   }
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import './Hero.css'
 import heroImg from '../../assets/hero img.jpg'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+const navigate = useNavigate()
   return (
     <div className='Hero'>
     
@@ -13,8 +15,8 @@ const Hero = () => {
         economic resilience, and belonging — one community at a time.</p>
     
     <div className="hero-buttons">
-    <button className="hero-button primary">See Our Impact</button>
-    <button className="hero-button secondary">Get Involved</button>
+    <button className="hero-button primary" onClick={() => navigate('/ourwork')}>See Our Impact</button>
+    <button className="hero-button secondary" onClick={() => navigate('/contact')}>Get Involved</button>
     </div>
 
     <div className="hero-impact">
