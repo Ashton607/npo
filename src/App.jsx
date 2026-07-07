@@ -9,6 +9,7 @@ import Dignity from './components/programmes/Dignity'
 import Outreach from './components/programmes/Outreach'
 import Contact from './components/contact/Contact'
 import Donate from './components/donate/Donate'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="donate" element={<Donate />} />
       </Routes>
+      <Footer/>
     </Router>
   )
 }

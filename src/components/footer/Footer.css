@@ -1,0 +1,155 @@
+.site-footer {
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Top section */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 56px 72px 40px;
+  background-color: #FFFFFF;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 200px;
+}
+
+.footer-logo-main {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 24px;
+  color: #14251E;
+}
+
+.footer-logo-sub {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7D8459;
+}
+
+.footer-col {
+  flex: 1 1 180px;
+}
+
+.footer-col-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7D8459;
+  margin: 0 0 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a {
+  font-size: 14px;
+  color: #7D8459;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #14251E;
+}
+
+.footer-address,
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3F3F3B;
+  margin: 0;
+}
+
+.footer-contact strong {
+  color: #1F1F1D;
+}
+
+/* Description strip */
+.footer-description {
+  background-color: #EFEAE0;
+  padding: 28px 72px;
+  border-top: 1px solid #D8D3C8;
+  border-bottom: 1px solid #D8D3C8;
+}
+
+.footer-description p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #6B6B63;
+  margin: 0;
+  max-width: 1100px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 72px;
+  background-color: #14251E;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #A8B0A5;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #C05621;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .footer-top {
+    padding: 40px 32px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-description {
+    padding: 24px 32px;
+  }
+  .footer-bottom {
+    padding: 20px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
