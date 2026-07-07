@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import { IoIosArrowForward } from "react-icons/io";
 
 const topics = [
   'General enquiry',
   'Partnership & funding',
-  'Volunteer & internship',
+  'Volunteering',
   'Press & media',
-  'Program referral',
+  'Programme referral',
   'Other',
 ]
 
@@ -72,7 +73,7 @@ const [activeTopic, setActiveTopic] = useState('General enquiry')
         </div>
 
         <button className="submit-btn">
-          Send message <span className="arrow">→</span>
+          Send message <span className="arrow"><IoIosArrowForward style={{marginBottom:'-3px'}}/></span>
         </button>
       </div>
 
@@ -124,7 +125,13 @@ const [activeTopic, setActiveTopic] = useState('General enquiry')
         <div className="info-divider"></div>
 
         <div className="donate-callout">
-          <span>Ready to donate?</span>
+        <h3 className="donate-callout-title">Ready to donate?</h3>
+        <p className="donate-callout-subtitle">We accept direct bank transfers in ZAR</p>
+        <a href="/donate" className="donate-link">
+        View bank details
+        <span className="arrow">
+        <IoIosArrowForward />
+        </span></a>
         </div>
       </div>
     </div>

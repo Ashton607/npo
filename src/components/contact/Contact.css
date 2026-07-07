@@ -89,7 +89,7 @@
 
 /* Heading */
 .contact-heading {
-  font-family: 'Fraunces', serif;
+  font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-size: 28px;
@@ -303,15 +303,50 @@
 
 /* Donate callout */
 .donate-callout {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   background-color: #E5DFD1;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 20px 24px;
 }
 
-.donate-callout span {
-  font-family: 'Fraunces', serif;
+.donate-callout-title {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 17px;
   color: #1F1F1D;
+  margin: 0;
+}
+
+.donate-callout-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  color: #6B6B63;
+  margin: 0;
+}
+.donate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1F1F1D;
+  text-decoration: none;
+  margin-top: 8px;
+  width: fit-content;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.donate-link .arrow {
+  transition: transform 0.2s ease;
+  margin-bottom: -5px;
+}
+
+.donate-link:hover {
+  color: #C05621;
+  gap: 12px;
 }
 

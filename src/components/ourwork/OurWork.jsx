@@ -3,10 +3,12 @@ import './OurWork.css'
 import card1 from '../../assets/card1.svg'
 import card2 from '../../assets/card2.jpg'
 import card3 from '../../assets/card3.svg'
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io"
+import { useNavigate } from 'react-router-dom'
 
 
 const OurWork = () => {
+const navigate = useNavigate()
   return (
     <div className='OurWork'>
     
@@ -159,10 +161,10 @@ const OurWork = () => {
     </div>
    {/*Should add an on click function to the buttons later */}
    <div className="cta-buttons">
-    <button className="cta-button primary">
-      Donate now <span className="arrow"><IoIosArrowForward style={{marginBottom:'-3px'}}/></span>
+    <button className="cta-button primary" onClick={() => navigate('/donate')}>
+    Donate now <span className="arrow"><IoIosArrowForward style={{ marginBottom: '-3px' }} /></span>
     </button>
-    <button className="cta-button secondary">Volunteer with us</button>
+    <button className="cta-button secondary" onClick={() => navigate('/contact')}>Volunteer with us</button>
     </div>
     </div>
 

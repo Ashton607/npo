@@ -1,8 +1,10 @@
 import React from 'react'
 import './Programmes.css'
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom'
 
 const Outreach = () => {
+  const navigate = useNavigate()
   return (
     <div className='Programmes'>
 
@@ -95,8 +97,8 @@ const Outreach = () => {
                  </div>
                 {/*Should add an on click function to the buttons later */}
                 <div className="cta-buttons">
-                 <button className="cta-button primary">
-                   Donate now <span className="arrow"><IoIosArrowForward style={{marginBottom:'-3px'}}/></span>
+                 <button className="cta-button primary" onClick={() => navigate('/donate')}>
+                  Donate now <span className="arrow"><IoIosArrowForward style={{ marginBottom: '-3px' }} /></span>
                  </button>
                  <button className="cta-button secondary">Volunteer with us</button>
                  </div>
