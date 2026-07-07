@@ -295,3 +295,169 @@
 .cta-button.secondary:hover {
   border-color: #FFFFFF;
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .OurWork {
+    padding: 3.5rem 2.5rem;
+  }
+
+  .our-work-subtitle {
+    width: 80%;
+  }
+
+  .our-work-impact {
+    padding: 36px;
+  }
+
+  .our-work-cta {
+    padding: 48px 56px;
+  }
+}
+
+/* Small tablet / large mobile */
+@media (max-width: 900px) {
+  .OurWork {
+    padding: 3rem 2rem;
+    margin-top: 6%;
+  }
+
+  .our-work-subtitle {
+    width: 100%;
+  }
+
+  /* Impact stats: 2x2 grid instead of a single row */
+  .our-work-impact {
+    flex-wrap: wrap;
+    gap: 32px 0;
+    padding: 32px;
+  }
+
+  .our-work-impact-item {
+    flex: 1 1 45%;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  /* Cards stack */
+  .our-work-cards {
+    flex-direction: column;
+    padding: 56px 0;
+    gap: 32px;
+  }
+
+  /* CTA stacks */
+  .our-work-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 48px 32px;
+  }
+
+  .cta-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .OurWork {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .our-work-title {
+    letter-spacing: 0.01em;
+  }
+
+  .our-work-impact {
+    padding: 28px 20px;
+    margin-bottom: 32px;
+  }
+
+  .our-work-impact-item {
+    flex: 1 1 100%;
+    gap: 6px;
+  }
+
+  .our-work-cards {
+    padding: 40px 0;
+    gap: 24px;
+  }
+
+  .card-info {
+    padding: 24px 20px;
+  }
+
+  .card-label {
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 12px;
+  }
+
+  .card-label h3 {
+    font-size: 17px;
+  }
+
+  .our-work-cta {
+    padding: 40px 24px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+  }
+
+  .cta-button {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .OurWork {
+    padding: 2rem 1.2rem;
+  }
+
+  .our-work-badge {
+    font-size: 12px;
+  }
+
+  .our-work-badge::before {
+    width: 20px;
+  }
+
+  .our-work-impact {
+    padding: 24px 16px;
+  }
+
+  .our-work-impact-number {
+    font-size: 28px;
+  }
+
+  .our-work-impact-label {
+    font-size: 13px;
+  }
+
+  .our-work-impact-caption {
+    font-size: 12px;
+  }
+
+  .our-work-cards {
+    padding: 32px 0;
+    gap: 20px;
+  }
+
+  .card-info-subtitle {
+    font-size: 14px;
+  }
+
+  .cta-subtitle {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
