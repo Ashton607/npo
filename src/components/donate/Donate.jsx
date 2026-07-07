@@ -21,6 +21,27 @@ const bankFields = [
   { label: 'Reference', value: 'PROGRAMME – [your full name / company name]' },
 ]
 
+const alternativeMethods = [
+  {
+    title: 'In kind donations',
+    tag: 'By arrangement',
+    description:
+      "We warmly accept direct donations of non perishable food items, fresh ingredients for our community kitchen, seasonal winter blankets, and gently used clothing or school shoes. Contact our administration team to arrange a drop-off at our church grounds.",
+  },
+  {
+    title: 'Volunteer your time',
+    tag: 'Join our team',
+    description:
+      'Our programmes rely heavily on the hands and hearts of the community. You can donate your time by joining our local volunteer force to help pack weekly grocery hampers, cook meals at our community kitchen, assist with clothing sorting, or provide mentorship in our youth outreach circles.',
+  },
+  {
+    title: 'Institutional giving',
+    tag: 'Section 18A',
+    description:
+      'Foundations, corporations, and government agencies can fund specific programs with full outcome reporting and joint communications. Multi-year commitments are especially valuable to long-horizon programs.',
+  },
+]
+
 const [copiedField, setCopiedField] = useState(null)
 
   const handleCopy = (value, label) => {
@@ -179,6 +200,32 @@ const [copiedField, setCopiedField] = useState(null)
 
     </div>
     </div>
+
+  <div className="donate-alternatives">
+  <div className="donate-alternatives-content">
+  <span className="donate-badge">
+    <span className="badge-line"></span>
+    other ways to give
+    </span> 
+
+  <h2 className="donate-impact-title">
+    <span className="line1">Beyond</span>
+    <span className="line2">a bank transfer.</span>
+  </h2>
+
+  <div className="alt-methods-box">
+      {alternativeMethods.map((method, index) => (
+        <div className="alt-method-item" key={method.title}>
+          <div className="alt-method-header">
+            <h3 className="alt-method-title">{method.title}</h3>
+            <span className="alt-method-tag">{method.tag}</span>
+          </div>
+          <p className="alt-method-description">{method.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+  </div>
 
     </div>
   )

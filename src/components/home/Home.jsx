@@ -9,20 +9,24 @@ import foodSystemsImg from '../../assets/foodSystemsImg.jpg'
 import economicImg from '../../assets/economicImg.png'
 import infrastructureImg from '../../assets/infrastructureImg.png'
 import Hero from '../hero/Hero'
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('relief');
+  const navigate = useNavigate()
   
 
   const programmeData = {
   relief: {
     badge: 'Food & Staples',
-    eyebrow: 'Program 01',
+    eyebrow: 'Programme 01',
     title: 'The Immediate Relief Programme',
     description:
       'We establish community-led weekly food drives, hot meal distributions, emergency grocery parcels, and humanitarian food hampers.',
     image: foodSystemsImg,
+    path: '/relief',
     stats: [
       { number: '200 people', label: 'Directly reached' },
       { number: '3 communities', label: 'Active programmes' },
@@ -30,11 +34,12 @@ const Home = () => {
   },
   dignity: {
     badge: 'Clothing & Essentials',
-    eyebrow: 'Program 02',
+    eyebrow: 'Programme 02',
     title: 'The Dignity Programme',
     description:
       'We provide seasonal clothing winter blanket distributions, school shoe/uniform collections, and work-wear packages for job seekers.',
     image: economicImg,
+    path: '/dignity',
     stats: [
       { number: '200 people', label: 'Directly reached' },
       { number: '3 communities', label: 'Active programmes' },
@@ -42,11 +47,12 @@ const Home = () => {
   },
   outreach: {
     badge: 'Events & Safe Spaces',
-    eyebrow: 'Program 03',
+    eyebrow: 'Programme 03',
     title: 'The Community Outreach Programme',
     description:
       'Youth programmes, community support circles, counseling sessions, and neighborhood clean-up or festival days.',
     image: infrastructureImg,
+    path: '/outreach',
     stats: [
       { number: '10 projects', label: 'Completed' },
       { number: '3 communities', label: 'Active programmes' },
@@ -75,7 +81,7 @@ const active = programmeData[activeTab]
         <img src={preview1} alt="Founder Pastor Deon Ellison speaking in Bongani Douglas Northern Cape" />
         <div className="preview-overlay">
           <span className="preview-title">Why Partner With Deon Ellison Foundation</span>
-          <span className="preview-subtitle">Partnership Benefits <FaArrowRight size={14} style={{marginBottom:'-2px'}}/></span>
+          <span className="preview-subtitle" onClick={() => navigate('/ourwork')}>Partnership Benefits <FaArrowRight size={14} style={{marginBottom:'-2px'}}/></span>
         </div>
         </div>
 
@@ -83,7 +89,7 @@ const active = programmeData[activeTab]
         <img src={preview2} alt="Community members gathering for a local event from the Deon Ellison Foundation in Douglas Bongani" />
         <div className="preview-overlay">
           <span className="preview-title">Impact & Innovation</span>
-          <span className="preview-subtitle">See how we're making a difference <FaArrowRight size={14} style={{marginBottom:'-2px'}}/></span>
+          <span className="preview-subtitle" onClick={() => navigate('/ourwork')}>See how we're making a difference <FaArrowRight size={14} style={{marginBottom:'-2px'}}/></span>
         </div>
         </div>
 
@@ -143,9 +149,9 @@ const active = programmeData[activeTab]
             ))}
           </div>
 
-          <a href="#" className="programme-link">
-            Read full programme overview <span className="arrow"><IoIosArrowForward /></span>
-          </a>
+          <Link to={active.path} className="programme-link">
+          Read full programme overview <span className="arrow"><IoIosArrowForward /></span>
+          </Link>
         </div>
   </div>
   </div>
