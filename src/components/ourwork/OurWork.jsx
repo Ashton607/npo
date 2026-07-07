@@ -26,28 +26,28 @@ const navigate = useNavigate()
 
     <div className="our-work-impact">
     {/*The Scale Metric*/}
-    <div className="impact-item">
-    <span className="impact-number">50</span>
-    <span className="impact-label">Emergency parcels packed</span>
-    <span className="impact-caption">delivered to vulnerable homes weekly</span>
+    <div className="our-work-impact-item">
+    <span className="our-work-impact-number">50</span>
+    <span className="our-work-impact-label">Emergency parcels packed</span>
+    <span className="our-work-impact-caption">delivered to vulnerable homes weekly</span>
     </div>
     {/*The Integrity Metric*/}
-   <div className="impact-item">
-    <span className="impact-number">100%</span>
-    <span className="impact-label">Direct impact model</span>
-    <span className="impact-caption">zero administrative overhead</span>
+   <div className="our-work-impact-item">
+    <span className="our-work-impact-number">100%</span>
+    <span className="our-work-impact-label">Direct impact model</span>
+    <span className="our-work-impact-caption">zero administrative overhead</span>
    </div>
    {/*The Cost Metric*/}
-   <div className="impact-item">
-    <span className="impact-number">R25</span>
-    <span className="impact-label">Per meal provided</span>
-    <span className="impact-caption">through our nutrition drives</span>
+   <div className="our-work-impact-item">
+    <span className="our-work-impact-number">R25</span>
+    <span className="our-work-impact-label">Per meal provided</span>
+    <span className="our-work-impact-caption">through our nutrition drives</span>
    </div>
     {/*The Growth Target Metric*/}
-   <div className="impact-item">
-    <span className="impact-number">5,000</span>
-    <span className="impact-label">First-year target</span>
-    <span className="impact-caption">food hampers for residents in need</span>
+   <div className="our-work-impact-item">
+    <span className="our-work-impact-number">5,000</span>
+    <span className="our-work-impact-label">First-year target</span>
+    <span className="our-work-impact-caption">food hampers for residents in need</span>
    </div>
    </div>
 

@@ -103,7 +103,7 @@ const Dignity = () => {
              </button>
              <button className="cta-button secondary">Volunteer with us</button>
              </div>
-             </div>
+        </div>
     </div>
     </div>
   )

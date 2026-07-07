@@ -8,6 +8,7 @@ import Relief from './components/programmes/Relief'
 import Dignity from './components/programmes/Dignity'
 import Outreach from './components/programmes/Outreach'
 import Contact from './components/contact/Contact'
+import Donate from './components/donate/Donate'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="dignity" element={<Dignity />} />
         <Route path="outreach" element={<Outreach />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="donate" element={<Donate />} />
       </Routes>
     </Router>
   )
