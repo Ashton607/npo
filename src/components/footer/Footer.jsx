@@ -1,14 +1,14 @@
 import React from 'react'
 import './Footer.css'
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
+import logoImg from '../../assets/DEF.jpg'
 
 const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <span className="footer-logo-main">Common Ground</span>
-          <span className="footer-logo-sub">International</span>
+        <img src={logoImg} alt="Deon Ellison Foundation" className="footer-logo-img" />
         </div>
 
         <div className="footer-col">
@@ -17,7 +17,6 @@ const Footer = () => {
             <li><a href="/terms">Terms & Conditions</a></li>
             <li><a href="/cookie-policy">Cookie Policy</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/online-security">Online Security</a></li>
           </ul>
         </div>
 
@@ -34,26 +33,27 @@ const Footer = () => {
           <p className="footer-contact">
             <strong>Tel:</strong> +1 212 888 0100<br />
             <strong>WhatsApp:</strong> +1 212 888 0199<br />
-            hello@commonground.org
+            <strong>Email:</strong> hello@commonground.org
           </p>
         </div>
       </div>
 
       <div className="footer-description">
         <p>
-          Common Ground International is a registered Non-Profit Organization
-          committed to ending poverty and restoring dignity in communities
-          worldwide. Over the past 20 years, thousands of families have been
-          empowered to take charge of their own lives and futures. We work
-          with a diversity of people in need — from the most vulnerable to
-          those who have the potential, but lack the opportunity, to become
-          self-supporting.
+          The Deon Ellison Foundation is a newly established Non-Profit Organization passionately 
+          committed to breaking cycles of local poverty and restoring personal dignity from the ground 
+          up. Launched within the past year, our mission is built on immediate accountability and direct 
+          community action. We work hand in hand with a diversity of people in need delivering urgent 
+          physical relief to our most vulnerable neighbors while building the foundational support 
+          networks that empower individuals to become entirely self supporting. We believe that true 
+          transformation starts on day one, and we are moving rapidly to build a resilient future for 
+          every family in our care.
         </p>
       </div>
 
       <div className="footer-bottom">
         <span className="footer-copyright">
-          © 2026 Common Ground International. All rights reserved.
+          © 2026 Deon Ellison Foundation. All rights reserved.
         </span>
 
         <div className="footer-socials">

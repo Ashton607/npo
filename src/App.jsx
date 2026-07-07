@@ -10,10 +10,12 @@ import Outreach from './components/programmes/Outreach'
 import Contact from './components/contact/Contact'
 import Donate from './components/donate/Donate'
 import Footer from './components/footer/Footer'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />

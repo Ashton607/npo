@@ -15,25 +15,16 @@
 
 .footer-logo {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
   flex: 1 1 200px;
 }
 
-.footer-logo-main {
-  font-family: 'Fraunces', serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-size: 24px;
-  color: #14251E;
-}
-
-.footer-logo-sub {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #7D8459;
+.footer-logo-img {
+  height: 250px;       
+  width: auto;
+  object-fit: contain;
+  margin-left: -80px;
+  margin-top: -50px;
 }
 
 .footer-col {
