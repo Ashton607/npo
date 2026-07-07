@@ -152,7 +152,7 @@
 .bank-details{
   display: flex;
   flex-direction: column;
-  margin-top: 8%;
+  margin-top: 3%;
   width: 100%;
   background-color: #F4F1EA; 
 }
@@ -167,6 +167,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
+  width: 80%;
   color: #616161;
   margin-bottom: 100px;
 }
@@ -295,4 +296,81 @@
   color: #1F1F1D;
 }
 
+/*Impact section*/
+.donate-impact{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+  width: 100%;
+  background-color: #F4F1EA; 
+}
+.donate-impact-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 50px;
+}
+.donate-impact-title{
+  font-size: clamp(2.8rem, 6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.donate-impact-title .line1 {
+  display: block;
+}
+.donate-impact-title .line2 {
+  display: block;
+  background: linear-gradient(135deg, #a74000 0%, #C05621 40%, #7A3313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.donate-impact-method {
+  display: flex;
+  width: 95%;
+  background-color: #14251E;
+  padding: 48px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
 
+.donate-impact-item {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.donate-impact-item:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.donate-impact-number {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1;
+  background: linear-gradient(135deg, #a74000 0%, #C05621 40%, #7A3313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.donate-impact-label {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.donate-impact-caption {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  color: #A8B0A5;
+}

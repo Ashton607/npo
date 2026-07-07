@@ -8,17 +8,17 @@ import { HiOutlineClipboard, HiOutlineClipboardCheck } from 'react-icons/hi'
 const Donate = () => {
 const moneyBreakdown = [
   { percent: 87, width: '100%', label: 'Direct program delivery' },
-  { percent: 9, width: '35%', label: 'Local staff & operations' },
-  { percent: 4, width: '15%', label: 'Reporting & compliance' },
+  { percent: 9, width: '35%', label: 'Pastoral Oversight & Local Operations' },
+  { percent: 4, width: '15%', label: 'CSI Compliance & Reporting' },
 ]
 
 const bankFields = [
   { label: 'Account name', value: 'Deon Ellison Foundation' },
   { label: 'Account number', value: '4471 8823 9900 1142' },
-  { label: 'Routing number', value: '021 000 021' },
+  { label: 'BRANCH CODE', value: '021 000 021' },
   { label: 'Account type', value: 'Checking' },
   { label: 'SWIFT / BIC', value: 'FCBKUS33XXX' },
-  { label: 'Reference', value: 'DONATION – [your name]' },
+  { label: 'Reference', value: 'PROGRAMME – [your full name / company name]' },
 ]
 
 const [copiedField, setCopiedField] = useState(null)
@@ -76,6 +76,8 @@ const [copiedField, setCopiedField] = useState(null)
         </div>
 
       </div>
+
+    {/*Bank Transfer*/}
     <div className="bank-details">
     <div className="bank-details-content">
       <span className="donate-badge">
@@ -94,7 +96,7 @@ const [copiedField, setCopiedField] = useState(null)
       <div className="bank-card">
       <div className="bank-card-header">
         <div className="bank-header-text">
-          <span className="bank-country-eyebrow">Northern Cape</span>
+          <span className="bank-country-eyebrow">Northern Cape, Douglas 8730</span>
           <h3 className="bank-name">Standard Bank</h3>
           <p className="bank-address"> Douglas Sentrum, 16 Loch St, Douglas, 8730</p>
         </div>
@@ -122,11 +124,58 @@ const [copiedField, setCopiedField] = useState(null)
       </div>
 
       <div className="bank-card-footer">
-        <strong>Important:</strong> Always include your full name in the
+        <strong>Important:</strong> Always include your chosen programme and full name in the
         reference field. We will send a tax receipt to your registered email
         within 3 business days of receiving your transfer.
       </div>
     </div>
+
+    </div>
+    </div>
+    
+    {/*Donation Impact*/}
+    <div className="donate-impact">
+    <div className="donate-impact-content">
+    <span className="donate-badge">
+    <span className="badge-line"></span>
+     your impact
+    </span> 
+
+    <h2 className="donate-impact-title">
+    <span className="line1">What a transfer</span>
+    <span className="line2">makes possible.</span>
+    </h2>
+
+    <div className="donate-impact-method">
+    {/*The Scale Metric*/}
+    <div className="donate-impact-item">
+    <span className="donate-impact-number">R250</span>
+    <span className="donate-impact-label">Funds an emergency parcel</span>
+    <span className="donate-impact-caption">Supplies a highly vulnerable family with a complete, 
+    nutritionally balanced grocery hamper to combat immediate household hunger.</span>
+    </div>
+    {/*The Integrity Metric*/}
+   <div className="donate-impact-item">
+    <span className="donate-impact-number">R1,200</span>
+    <span className="donate-impact-label">Equips local school children</span>
+    <span className="donate-impact-caption">Provides essential school uniforms, winter blankets, and 
+    durable shoes to restore personal pride and dignity for children in need.</span>
+   </div>
+   {/*The Cost Metric*/}
+   <div className="donate-impact-item">
+    <span className="donate-impact-number">R6,250</span>
+    <span className="donate-impact-label">Powers the community kitchen</span>
+    <span className="donate-impact-caption">Funds a major community nutrition drive, providing 250 hot, 
+    wholesome meals directly to children and elderly residents at our relief tables.</span>
+   </div>
+    {/*The Growth Target Metric*/}
+   <div className="donate-impact-item">
+    <span className="donate-impact-number">R25,000</span>
+    <span className="donate-impact-label">Sustains a local outreach drive</span>
+    <span className="donate-impact-caption">Secures a full quarter of community mentorship initiatives, safe space 
+    management, and critical social resilience infrastructure under trusted local guidance.</span>
+   </div>
+   </div>
 
     </div>
     </div>
