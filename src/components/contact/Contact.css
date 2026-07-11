@@ -350,3 +350,152 @@
   gap: 12px;
 }
 
+
+/* Tablet */
+@media (max-width: 900px) {
+  .Contact {
+    padding: 3rem 2rem;
+    margin-top: 6%;
+  }
+
+  .contact-subtitle {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  /* Form/info columns stack */
+  .contact-page {
+    flex-direction: column;
+  }
+
+  .contact-form-side {
+    border-right: none;
+    border-bottom: 1px solid #D8D3C8;
+  }
+
+  .contact-form-side,
+  .contact-info-side {
+    padding: 40px 32px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* Small tablet / large mobile */
+@media (max-width: 768px) {
+  .Contact {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contact-title {
+    letter-spacing: 0.01em;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .contact-form-side,
+  .contact-info-side {
+    padding: 32px 24px;
+  }
+
+  .topic-grid {
+    gap: 8px;
+  }
+
+  .topic-btn {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .form-textarea {
+    min-height: 120px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .Contact {
+    padding: 2rem 1.2rem;
+  }
+
+  .contact-badge {
+    font-size: 12px;
+  }
+
+  .contact-badge::before {
+    width: 20px;
+  }
+
+  .contact-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .contact-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form-side,
+  .contact-info-side {
+    padding: 24px 18px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-label {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .topic-grid {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .topic-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  .info-org {
+    font-size: 18px;
+  }
+
+  .info-address,
+  .info-line a {
+    font-size: 13px;
+  }
+
+  .donate-callout {
+    padding: 16px 20px;
+  }
+
+  .donate-callout-title {
+    font-size: 15px;
+  }
+
+  .donate-callout-subtitle {
+    font-size: 12px;
+  }
+}

@@ -447,3 +447,246 @@
   color: #6B6B63;
   margin: 0;
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+  /* Hero: text + image stack */
+  .donate-content {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .donate-text {
+    padding: 48px 40px;
+  }
+
+  .donate-image {
+    min-height: 420px;
+  }
+
+  .donate-image img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .money-card {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    padding: 20px;
+  }
+
+  /* Bank details */
+  .bank-details-content {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .bank-details-subtitle {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .bank-card {
+    max-width: 100%;
+  }
+
+  /* Impact stats: 2x2 grid */
+  .donate-impact-content {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .donate-impact-method {
+    flex-wrap: wrap;
+    gap: 32px 0;
+    padding: 32px;
+    width: 100%;
+  }
+
+  .donate-impact-item {
+    flex: 1 1 45%;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  /* Alternatives: stack columns */
+  .donate-alternatives-content {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .alt-methods-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .alt-method-item {
+    border-left: none;
+    border-top: 1px solid #D8D3C8;
+    padding: 24px 28px;
+  }
+
+  .alt-method-item:first-child {
+    border-top: none;
+  }
+}
+
+/* Small tablet / large mobile */
+@media (max-width: 768px) {
+  .donate-text {
+    padding: 40px 28px;
+  }
+
+  .donate-title {
+    font-size: clamp(2.4rem, 6vw, 3.2rem);
+  }
+
+  .donate-subtitle {
+    max-width: 100%;
+  }
+
+  .money-row {
+    grid-template-columns: 32px 1fr;
+  }
+
+  .money-label {
+    grid-column: 2;
+    white-space: normal;
+  }
+
+  .bank-details-content,
+  .donate-impact-content,
+  .donate-alternatives-content {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .bank-field-row {
+    grid-template-columns: 1fr 32px;
+    grid-template-areas:
+      "label label"
+      "value copy";
+    row-gap: 4px;
+  }
+
+  .bank-field-label {
+    grid-area: label;
+  }
+
+  .bank-field-value {
+    grid-area: value;
+  }
+
+  .copy-btn {
+    grid-area: copy;
+    justify-self: end;
+  }
+
+  .donate-impact-title {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .donate-text {
+    padding: 32px 20px;
+    gap: 16px;
+  }
+
+  .donate-badge {
+    font-size: 12px;
+  }
+
+  .donate-title {
+    font-size: 2rem;
+  }
+
+  .donate-subtitle {
+    font-size: 14px;
+  }
+
+  .donate-image {
+    min-height: 460px;
+  }
+
+  .money-card {
+    left: 5px;
+    right: 16px;
+    bottom: 16px;
+    padding: 16px;
+  }
+
+  .money-card-title {
+    font-size: 11px;
+  }
+
+  .bank-details-content,
+  .donate-impact-content,
+  .donate-alternatives-content {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 50px;
+  }
+
+  .bank-details-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .bank-card-header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .bank-name {
+    font-size: 18px;
+  }
+
+  .bank-field-row {
+    padding: 16px 20px;
+  }
+
+  .bank-field-value {
+    font-size: 14px;
+  }
+
+  .bank-card-footer {
+    padding: 16px 20px;
+    font-size: 12px;
+  }
+
+  .donate-impact-method {
+    padding: 24px 16px;
+  }
+
+  .donate-impact-item {
+    flex: 1 1 100%;
+  }
+
+  .donate-impact-number {
+    font-size: 28px;
+  }
+
+  .donate-impact-label {
+    font-size: 14px;
+  }
+
+  .donate-impact-caption {
+    font-size: 12px;
+  }
+
+  .alt-method-item {
+    padding: 20px;
+  }
+
+  .alt-method-title {
+    font-size: 17px;
+  }
+
+  .alt-method-description {
+    font-size: 13px;
+  }
+}

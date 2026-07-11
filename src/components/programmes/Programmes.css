@@ -128,3 +128,97 @@
   color: #A8B0A5;
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .Programmes {
+    padding: 3rem 2rem;
+    margin-top: 6%;
+  }
+
+  .programmes-subtitle {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  /* Method stats: 2x2 grid instead of a single row */
+  .programmes-method {
+    flex-wrap: wrap;
+    gap: 32px 0;
+    padding: 32px;
+  }
+
+  .method-item {
+    flex: 1 1 45%;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* Small tablet / large mobile */
+@media (max-width: 768px) {
+  .Programmes {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .programmes-title {
+    letter-spacing: 0.01em;
+  }
+
+  .programmes-title-h2 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+  }
+
+  .programmes-method {
+    padding: 28px 20px;
+    margin-bottom: 32px;
+  }
+
+  .method-item {
+    gap: 6px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .Programmes {
+    padding: 2rem 1.2rem;
+  }
+
+  .programmes-badge {
+    font-size: 12px;
+  }
+
+  .programmes-badge::before {
+    width: 20px;
+  }
+
+  .programmes-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .programmes-title-h2 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  /* Method stats: full single column */
+  .programmes-method {
+    padding: 24px 16px;
+  }
+
+  .method-item {
+    flex: 1 1 100%;
+  }
+
+  .method-number {
+    font-size: 28px;
+  }
+
+  .method-label {
+    font-size: 14px;
+  }
+
+  .method-caption {
+    font-size: 12px;
+  }
+}
